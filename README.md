@@ -22,10 +22,14 @@ movement of two motors.
 We began this part of the lab by connecting our RedBoard to the computer and starting up the Arduino IDE application on our computer.  
 After this step we then connected the ultrasonic sensor HC-SR04 to the circuit shown below.
 
-**Picture Here $$$$$$$$$$$$$$$$$$$$$**
+<p align="center">
+  <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.32.04%20PM.png width = 50%> 
+</p> 
 
-Figure 1. Connection of the HC-SR04 Ultrasonic Sensor to the RedBoard.   
-https://learn.sparkfun.com/tutorial/sparkfun-inventors-kit-experiment-guide
+Figure 1. Connection of the HC-SR04 Ultrasonic Sensor to the RedBoard. ONLY USE THE UPPER HALF OF THIS IMAGE SHOWN IN THE LINK     
+https://cdn.sparkfun.com/assets/learn_tutorials/6/3/6/SIK_Circuit_3B.png?_gl=1*1jhoxae*_ga*MjAzMzk5NTE4NS4xNzA0NzUyMjY0*_ga_T369JS7J9N*MTcwODM3NTA5OS43LjEuMTcwODM3NTE4OC40MS4wLjA.
+
+
 
 
 We then programmed an algorithm to read the distance from the sensor to a clear box, and send the value to the serial communications display in the Arduino IDE application. The code for that step is shown below.
@@ -65,9 +69,8 @@ digitalWrite(trigPin, LOW);
 
 }
 ```
-NOTE: This code was previously written by someone else and edited by our group during the lab. The link to the original file is shown below.
-
-$$$$$$$$$$$$$$$$$$
+NOTE: This code was previously written by someone else and edited by our group during the lab. The link to the website, where the code can be found is shown below.   
+https://projecthub.arduino.cc/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-7cabe1
 
 
 
@@ -78,7 +81,9 @@ $$$$$$$$$$$$$$$$$$
 To begin part 2 we moved the ultrasonic sensor connections on the RedBoard to pins 6 & 7. We then connected the RedBoard, the Motor Driver and the Motors. The circuit that we constructed is shown below.
 NOTE: we did not include the sliding switch circuit that is in the below diagram.
 
-**Picture Here $$$$$$$$$$$$$$$$$$**
+<p align="center">
+  <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.56.18%20PM.png width = 50%> 
+</p> 
 
 Figure 2. Two Motor Connection   
 (https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5b-remote-controlled-robot)
@@ -250,11 +255,12 @@ void leftMotor(int motorSpeed)                        //function for driving the
 }
 ```
 
-After assuring the code that we inserted from online worked, we then edited that code to be able to insert commands into the serial port to move both motors at 3 different speeds; slow, medium and fast. The code shown for this step will be shown a few lines below to reduce the amount of space taken up in our lab, it has this step as well as the following steps included, is based on the code above but has been edited to perfrom a new task.
+After assuring the code that we inserted from online worked, we then edited that code to be able to insert commands into the serial port to move both motors at 3 different speeds; slow, medium and fast.     
+NOTE:  The code shown for this step will be shown a few lines below to reduce the amount of space taken up in our report, it has this step as well as the following steps included, and it is based on the code above but has been edited to perfrom a new task.
 
 We then verified that it would perform as expected by moving the robot forwards, backwards, left and right at those 3 different levels of speed.
 
-The next and final step was to insert the code from part 1 to make the motors stop when the distance measured is less than 10cm. The code shown for this step and the step above is shown below.
+The next and final step was to insert the code from part 1 to make the motors stop when the distance measured is less than 10cm. The code shown for this step and the step above is shown below. The link to the original code can be found in the code snippet in the above images.
 
 ```c++
 
@@ -450,25 +456,30 @@ void leftMotor(int motorSpeed)                        //function for driving the
 **Part 1**
 In part 1 of the lab, when we were using the HC-SR04 sensor, we used the ruler to test the algorithm that we wrote to answer the following questions.
 
-1. What is the resolution of this sensing system?
+1. What is the resolution of this sensing system?    
+   The resolution of this sensing system is 0.1mm.
 
 
-2. Try to move your obstacle by a millimeter and determine qualitatively how precise it is.
-
+2. Try to move your obstacle by a millimeter and determine qualitatively how precise it is.    
+Actual precision is given by the following equation:  340 m/s * (12 &mu;s) = 4.08mm precision     
+The system is precise when the object is not moving but may have random jumps from time to time. The sensor's accuracy is finicky and should be verified with a ruler.
 
 
 **Part 2**
 
 
-
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
 ## Discussion Questions ##
 
-1. What is the minimum speed number for the motors to move forward?   
-   
+1. What is the minimum speed number for the motors to move forward?     
+   The minimum speed number for the motors to move forward is one, however due to traction on surfaces, to physically move an object the speed would need to be higher.
 
 
 
 ## Conclusion of Lab 4 ##
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 
