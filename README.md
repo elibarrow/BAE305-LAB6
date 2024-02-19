@@ -26,7 +26,7 @@ After this step we then connected the ultrasonic sensor HC-SR04 to the circuit s
   <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.32.04%20PM.png width = 50%> 
 </p> 
 
-Figure 1. Connection of the HC-SR04 Ultrasonic Sensor to the RedBoard. ONLY USE THE UPPER HALF OF THIS IMAGE SHOWN IN THE LINK     
+Figure 1. Connection of the HC-SR04 Ultrasonic Sensor to the RedBoard. ONLY USE THE UPPER HALF OF THIS IMAGE SHOWN IN THE LINK. We do not use the RGB LED shown in the image.         
 https://cdn.sparkfun.com/assets/learn_tutorials/6/3/6/SIK_Circuit_3B.png?_gl=1*1jhoxae*_ga*MjAzMzk5NTE4NS4xNzA0NzUyMjY0*_ga_T369JS7J9N*MTcwODM3NTA5OS43LjEuMTcwODM3NTE4OC40MS4wLjA.
 
 
