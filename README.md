@@ -7,7 +7,7 @@ Feb. 22, 2024
 
 
 ### Lab Objectives: ###
-1. Familiarize ourselves with the use of an ultrasonic sensor in a distance measuring
+1. Familiarize ourselves with the use of an ultrasonic sensor in a distance-measuring
 application.   
 2. Understand the use of the Motor Driver and program an algorithm to control the
 movement of two motors.
@@ -16,11 +16,18 @@ movement of two motors.
 
 ## Lab Assignment Specific Items ##
 
+•	A Computer running Arduino IDE
+•	SparkFun Inventor’s kit
+o	RedBoard
+o	Ultrasonic sensor
+o	Two motors
+o	Motor Driver
+
 
 ## Methods and Testing ##
 ### Part 1 - Learn to Listen ###
 We began this part of the lab by connecting our RedBoard to the computer and starting up the Arduino IDE application on our computer.  
-After this step we then connected the ultrasonic sensor HC-SR04 to the circuit shown below.
+After this step, we connected the ultrasonic sensor HC-SR04 to the circuit below.
 
 <p align="center">
   <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.32.04%20PM.png width = 50%> 
@@ -78,8 +85,8 @@ https://projecthub.arduino.cc/Isaac100/getting-started-with-the-hc-sr04-ultrason
 ### Part 2 ###
 
 
-To begin part 2 we moved the ultrasonic sensor connections on the RedBoard to pins 6 & 7. We then connected the RedBoard, the Motor Driver and the Motors. The circuit that we constructed is shown below.
-NOTE: we did not include the sliding switch circuit that is in the below diagram.
+To begin part 2 we moved the ultrasonic sensor connections on the RedBoard to pins 6 & 7. We then connected the RedBoard, the Motor Driver, and the Motors. The circuit that we constructed is shown below.
+NOTE: we did not include the sliding switch circuit in the diagram below.
 
 <p align="center">
   <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.56.18%20PM.png width = 50%> 
