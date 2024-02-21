@@ -466,13 +466,15 @@ void leftMotor(int motorSpeed)                        //function for driving the
 
 
 **Part 1**
+
 In part 1 of the lab, when we were using the HC-SR04 sensor, we used the ruler to test the algorithm that we wrote to answer the following questions.
 
-1. What is the resolution of this sensing system?    
+**1. What is the resolution of this sensing system?**  
    The resolution of this sensing system is 0.1mm.
 
 
-2. Try to move your obstacle by a millimeter and determine qualitatively how precise it is.    
+**2. Try to move your obstacle by a millimeter and determine qualitatively how precise it is.**
+
 Actual precision is given by the following equation:  340 m/s * (12 &mu;s) = 4.08mm precision     
 The system is precise when the object is not moving but may have random jumps from time to time. The sensor's accuracy is finicky and should be verified with a ruler.
 
@@ -487,7 +489,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 **Part 2**
 
-1. What is the minimum speed number for the motors to move forward?     
+**1. What is the minimum speed number for the motors to move forward?**
+
 The minimum speed number for the motors to move forward is one, however, due to traction on surfaces, to physically move an object the speed would need to be higher.
 
 
