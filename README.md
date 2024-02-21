@@ -495,7 +495,7 @@ The system is precise when the object is not moving but may have random jumps fr
 **Part 2**
 
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+For the results of part two we effectively edited the code given to us online to accurately work towards the lab instructions. This was heading towards the direction of driving the robot at either low, medium, or high speed and using the ultrasonic sensor to have it stop when it was within 10cm of a nearby object. There were not any specific questions that were to be answered in this section.
 
 
 ## Discussion Questions ##
