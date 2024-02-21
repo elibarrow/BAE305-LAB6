@@ -104,6 +104,12 @@ NOTE: we did not include the sliding switch circuit in the diagram below.
 Figure 2. Two Motor Connection   
 (https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5b-remote-controlled-robot)
 
+<p align="center">
+  <img src=https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Move%20It%20Circuit.jpg width = 50%> 
+</p> 
+
+Figure 3: In-Class Example of Circuit
+
 The next step was to insert code that had previously been written to control both of the motors. This code was written to have the user insert which way to move the robot; left, right, forward, or backward, then followed by the distance for it to travel. The code that was given is shown below.   
 The proper citations for the code are shown in the first few lines.
 
