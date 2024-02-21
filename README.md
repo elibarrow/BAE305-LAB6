@@ -42,7 +42,7 @@ After this step, we connected the ultrasonic sensor HC-SR04 to the circuit below
   <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.32.04%20PM.png width = 50%> 
 </p> 
 
-Figure 1. Connection of the HC-SR04 Ultrasonic Sensor to the RedBoard. ONLY USE THE UPPER HALF OF THIS IMAGE SHOWN IN THE LINK. We do not use the RGB LED shown in the image.         
+Figure 1:Connection of the HC-SR04 Ultrasonic Sensor to the RedBoard. ONLY USE THE UPPER HALF OF THIS IMAGE SHOWN IN THE LINK. We do not use the RGB LED shown in the image.         
 https://cdn.sparkfun.com/assets/learn_tutorials/6/3/6/SIK_Circuit_3B.png?_gl=1*1jhoxae*_ga*MjAzMzk5NTE4NS4xNzA0NzUyMjY0*_ga_T369JS7J9N*MTcwODM3NTA5OS43LjEuMTcwODM3NTE4OC40MS4wLjA.
 
 
@@ -101,14 +101,14 @@ NOTE: we did not include the sliding switch circuit in the diagram below.
   <img src= https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Screenshot%202024-02-19%20at%202.56.18%20PM.png width = 50%> 
 </p> 
 
-Figure 2. Two Motor Connection   
+Figure 2: Two Motor Connection   
 (https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5b-remote-controlled-robot)
 
 <p align="center">
   <img src=https://github.com/elibarrow/BAE305-SP24-LAB6/blob/main/Move%20It%20Circuit.jpg width = 50%> 
 </p> 
 
-Figure 3: In-Class Example of Circuit
+Figure 3: In-Class Example of our Circuit
 
 The next step was to insert code that had previously been written to control both of the motors. This code was written to have the user insert which way to move the robot; left, right, forward, or backward, then followed by the distance for it to travel. The code that was given is shown below.   
 The proper citations for the code are shown in the first few lines.
