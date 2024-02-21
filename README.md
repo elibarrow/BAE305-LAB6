@@ -5,7 +5,7 @@ Feb. 22, 2024
 
 ## Summary of Lab ##
 
-There were multiple goals of this lab, with the main purpose being to learn how to use ultrasonic sensors and learn the behaviors and applications of ultrasonic systems. Secondary goals for the lab included learning to program a motor drive to control the movement of two motors, creating a greater understanding of analog versus digital signals, understanding and using an H-Bridge in a circuit to effectively brake or reverse the direction of the motors, and lastly to create a program to stop the movement of the motors whenever an object is detected closely to the ultrasonic sensor. To achieve these goals, we created two circuits with the first circuit 
+There were multiple goals of this lab, with the main purpose being to learn how to use ultrasonic sensors and learn the behaviors and applications of ultrasonic systems. Secondary goals for the lab included learning to program a motor drive to control the movement of two motors, creating a greater understanding of analog versus digital signals, and understanding and using an H-Bridge Motor Driver in a circuit to effectively brake or reverse the direction of the motors, and lastly to create a program to stop the movement of the motors whenever an object is detected closely to the ultrasonic sensor. To achieve these goals, we created two circuits with the first circuit for Part 1 only including an HC-SR04 Ultrasonic Sensor. By using code from the internet and uploading it to the circuit through Arduino IDE, the ultrasonic sensor began to read the distance of objects in its frontal view in centimeters. Through the use of a ruler to verify, we were able to find the resolution of the sensing system as well as how qualitatively precise the sensing system was. For Part 2 of the lab, we created a circuit which included an 
 
 There were multiple goals for this lab, with the main purpose being to learn how to run code through a breadboard using Arduino IDE. To understand this we created four different circuits involving LEDs and resistors and ran code through the breadboard to learn how the code behaved when it interacted with the circuit. The first circuit contained an LED that was blinking due to code and the second circuit involved controlling an LED through a potentiometer and setting the blinking time to the value read from the potentiometer. The third circuit contained an LED with a photoresistor and by implementing code, as the photoresistor detected a lower brightness, the LED would turn on. Lastly, the fourth circuit involved using the same circuit as the second circuit connected to the oscilloscope and observing the pulse width modulation and how it was affected by changes in resistance caused by the potentiometer. By completing this lab, some secondary goals were also achieved with us learning about the persistence of vision and how it affects light and sensors, learning the difference between analog and digital signals, understanding the purpose of a photoresistor, and becoming familiar with pulse width modulation (PWM) and how it is affected by changes in resistance.
 
@@ -30,9 +30,8 @@ movement of two motors.
 
 -	Two motors
 
--	Motor Driver
+-	Dual TB6612FNG H-Bridge Motor Driver
 
--	H-Bridge
 
 
 ## Methods and Testing ##
