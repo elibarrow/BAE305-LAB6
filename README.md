@@ -5,6 +5,8 @@ Feb. 22, 2024
 
 ## Summary of Lab ##
 
+There were multiple goals of this lab, with the main purpose being to learn how to use ultrasonic sensors and learn the behaviors and applications of ultrasonic systems.
+
 There were multiple goals for this lab, with the main purpose being to learn how to run code through a breadboard using Arduino IDE. To understand this we created four different circuits involving LEDs and resistors and ran code through the breadboard to learn how the code behaved when it interacted with the circuit. The first circuit contained an LED that was blinking due to code and the second circuit involved controlling an LED through a potentiometer and setting the blinking time to the value read from the potentiometer. The third circuit contained an LED with a photoresistor and by implementing code, as the photoresistor detected a lower brightness, the LED would turn on. Lastly, the fourth circuit involved using the same circuit as the second circuit connected to the oscilloscope and observing the pulse width modulation and how it was affected by changes in resistance caused by the potentiometer. By completing this lab, some secondary goals were also achieved with us learning about the persistence of vision and how it affects light and sensors, learning the difference between analog and digital signals, understanding the purpose of a photoresistor, and becoming familiar with pulse width modulation (PWM) and how it is affected by changes in resistance.
 
 
@@ -102,8 +104,8 @@ NOTE: we did not include the sliding switch circuit in the diagram below.
 Figure 2. Two Motor Connection   
 (https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5b-remote-controlled-robot)
 
-The next step was to insert code that had previously been written to control both of the motors. This code was written to have the user insert which way to move the robot; left, right, forwards or backwards, then followed by the distance for it to travel. The code that was given is shown below.   
-The proper citations for the code is shown in the first few lines.
+The next step was to insert code that had previously been written to control both of the motors. This code was written to have the user insert which way to move the robot; left, right, forward, or backward, then followed by the distance for it to travel. The code that was given is shown below.   
+The proper citations for the code are shown in the first few lines.
 
 
 ```c++
@@ -111,7 +113,7 @@ The proper citations for the code is shown in the first few lines.
   SparkFun Inventor’s Kit
   Circuit 5B - Remote Control Robot
 
-  Control a two wheeled robot by sending direction commands through the serial monitor.
+  Control a two-wheeled robot by sending direction commands through the serial monitor.
   This sketch was adapted from one of the activities in the SparkFun Guide to Arduino.
   Check out the rest of the book at
   https://www.sparkfun.com/products/14326
@@ -119,7 +121,7 @@ The proper citations for the code is shown in the first few lines.
   This sketch was written by SparkFun Electronics, with lots of help from the Arduino community.
   This code is completely free for any use.
 
-  View circuit diagram and instructions at: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40
+  View the circuit diagram and instructions at: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40
   Download drawings and code at: https://github.com/sparkfun/SIK-Guide-Code
 */
 
@@ -143,16 +145,16 @@ const int turnTime = 8;        //this is the number of milliseconds that it take
                                //it is set so that if you tell the robot to turn right 90 units, the robot turns about 90 degrees
 
                                //Note: these numbers will vary a little bit based on how you mount your motors, the friction of the
-                               //surface that your driving on, and fluctuations in the power to the motors.
+                               //surface that you're driving on, and fluctuations in the power to the motors.
                                //You can change the driveTime and turnTime to make them more accurate
 
-String botDirection;           //the direction that the robot will drive in (this change which direction the two motors spin in)
+String botDirection;           //the direction that the robot will drive in (this changes which direction the two motors spin in)
 String distance;               //the distance to travel in each direction
 
 /********************************************************************************/
 void setup()
 {
-  pinMode(switchPin, INPUT_PULLUP);   //set this as a pullup to sense whether the switch is flipped
+  pinMode(switchPin, INPUT_PULLUP);   //set this as a pull-up to sense whether the switch is flipped
 
   //set the motor control pins as outputs
   pinMode(AIN1, OUTPUT);
@@ -269,12 +271,12 @@ void leftMotor(int motorSpeed)                        //function for driving the
 }
 ```
 
-After assuring the code that we inserted from online worked, we then edited that code to be able to insert commands into the serial port to move both motors at 3 different speeds; slow, medium and fast.     
-NOTE:  The code shown for this step will be shown a few lines below to reduce the amount of space taken up in our report, it has this step as well as the following steps included, and it is based on the code above but has been edited to perfrom a new task.
+After assuring the code that we inserted from the internet worked, we then edited that code to be able to insert commands into the serial port to move both motors at 3 different speeds; slow, medium, and fast.     
+NOTE:  The code shown for this step will be shown a few lines below to reduce the amount of space taken up in our report, it has this step as well as the following steps included, and it is based on the code above but has been edited to perform a new task.
 
-We then verified that it would perform as expected by moving the robot forwards, backwards, left and right at those 3 different levels of speed.
+We then verified that it would perform as expected by moving the robot forwards, backward, left, and right at those 3 different levels of speed.
 
-The next and final step was to insert the code from part 1 to make the motors stop when the distance measured is less than 10cm. The code shown for this step and the step above is shown below. The link to the original code can be found in the code snippet in the above images.
+The next and final step was to insert the code from part 1 to make the motors stop when the distance measured was less than 10cm. The code shown for this step and the step above is shown below. The link to the original code can be found in the code snippet in the above images.
 
 ```c++
 
@@ -298,10 +300,10 @@ const int turnTime = 8;        //this is the number of milliseconds that it take
                                //it is set so that if you tell the robot to turn right 90 units, the robot turns about 90 degrees
 
                                //Note: these numbers will vary a little bit based on how you mount your motors, the friction of the
-                               //surface that your driving on, and fluctuations in the power to the motors.
+                               //surface that you're driving on, and fluctuations in the power to the motors.
                                //You can change the driveTime and turnTime to make them more accurate
 
-String botDirection;           //the direction that the robot will drive in (this change which direction the two motors spin in)
+String botDirection;           //the direction that the robot will drive in (this changes which direction the two motors spin in)
 String speed;               //the speed to travel in each direction
 int motorSpeed = 0;
 int stop = 0;
@@ -314,7 +316,7 @@ float duration, distance;
 /********************************************************************************/
 void setup()
 {
-  pinMode(switchPin, INPUT_PULLUP);   //set this as a pullup to sense whether the switch is flipped
+  pinMode(switchPin, INPUT_PULLUP);   //set this as a pull-up to sense whether the switch is flipped
 
   //set the motor control pins as outputs
   pinMode(AIN1, OUTPUT);
@@ -373,7 +375,7 @@ digitalWrite(trigPin, LOW);
       {
         rightMotor(motorSpeed);                                //drive the right wheel forward
         leftMotor(motorSpeed);                                 //drive the left wheel forward
-        //delay( 100000);            //drive the motors long enough travel the entered speed
+        //delay( 100000);            //drive the motors long enough to travel the entered speed
         //rightMotor(0);                                  //turn the right motor off
         //leftMotor(0);                                   //turn the left motor off
       }
@@ -461,7 +463,7 @@ void leftMotor(int motorSpeed)                        //function for driving the
 }
 
 ```
- After completing this part of the lab we then assured the code ran the robot as expected and proceeded to demostrate this to the instructor.
+ After completing this part of the lab we then ensured the code ran the robot as expected and proceeded to demonstrate this to the instructor.
 
 
 ## Results ##
@@ -497,7 +499,7 @@ The minimum speed number for the motors to move forward is one, however, due to 
 
 
 
-## Conclusion of Lab 4 ##
+## Conclusion of Lab 6 ##
 
 As stated in the summary of the lab, we created four circuits in Lab 4. The first circuit contained an LED that was blinking due to code and the second circuit involved controlling an LED through a potentiometer and setting the blinking time to the value read from the potentiometer. The third circuit contained an LED with a photoresistor and by implementing code, as the photoresistor detected a lower brightness, the LED would turn on. Lastly, the fourth circuit involved using the same circuit as the second circuit connected to the oscilloscope and observing the pulse width modulation and how it was affected by changes in resistance caused by the potentiometer. For the conclusions reached for the lab, from the first circuit we learned that the human eye has a frequency (Over 100 Hz) in which the eye cannot see flickering in lights. This effect is called the persistence of vision and is important in the field of designing electrical structures due to the use of sensors and lights. For the second circuit, we verified the Baud Rate and learned the difference between analog and digital signals. By changing the resistance in the potentiometer, the Serial Monitor Refresh would only take measurements when the LED blinks. As you increase the resistance in the potentiometer, the LED blinks less, and therefore measurements are taken less often by Arduino IDE
 
