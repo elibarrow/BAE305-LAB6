@@ -20,13 +20,13 @@ movement of two motors.
 
 •	SparkFun Inventor’s kit
 
-o	RedBoard
+-	RedBoard
 
-o	Ultrasonic sensor
+-	Ultrasonic sensor
 
-o	Two motors
+-	Two motors
 
-o	Motor Driver
+-	Motor Driver
 
 
 ## Methods and Testing ##
