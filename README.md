@@ -17,10 +17,15 @@ movement of two motors.
 ## Lab Assignment Specific Items ##
 
 •	A Computer running Arduino IDE
+
 •	SparkFun Inventor’s kit
+
 o	RedBoard
+
 o	Ultrasonic sensor
+
 o	Two motors
+
 o	Motor Driver
 
 
