@@ -485,8 +485,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 ## Discussion Questions ##
 
+**Part 2**
+
 1. What is the minimum speed number for the motors to move forward?     
-   The minimum speed number for the motors to move forward is one, however due to traction on surfaces, to physically move an object the speed would need to be higher.
+The minimum speed number for the motors to move forward is one, however, due to traction on surfaces, to physically move an object the speed would need to be higher.
 
 
 
