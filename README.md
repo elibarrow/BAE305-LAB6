@@ -5,6 +5,8 @@ Feb. 22, 2024
 
 ## Summary of Lab ##
 
+There were multiple goals for this lab, with the main purpose being to learn how to run code through a breadboard using Arduino IDE. To understand this we created four different circuits involving LEDs and resistors and ran code through the breadboard to learn how the code behaved when it interacted with the circuit. The first circuit contained an LED that was blinking due to code and the second circuit involved controlling an LED through a potentiometer and setting the blinking time to the value read from the potentiometer. The third circuit contained an LED with a photoresistor and by implementing code, as the photoresistor detected a lower brightness, the LED would turn on. Lastly, the fourth circuit involved using the same circuit as the second circuit connected to the oscilloscope and observing the pulse width modulation and how it was affected by changes in resistance caused by the potentiometer. By completing this lab, some secondary goals were also achieved with us learning about the persistence of vision and how it affects light and sensors, learning the difference between analog and digital signals, understanding the purpose of a photoresistor, and becoming familiar with pulse width modulation (PWM) and how it is affected by changes in resistance.
+
 
 ### Lab Objectives: ###
 1. Familiarize ourselves with the use of an ultrasonic sensor in a distance-measuring
@@ -497,6 +499,6 @@ The minimum speed number for the motors to move forward is one, however, due to 
 
 ## Conclusion of Lab 4 ##
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+As stated in the summary of the lab, we created four circuits in Lab 4. The first circuit contained an LED that was blinking due to code and the second circuit involved controlling an LED through a potentiometer and setting the blinking time to the value read from the potentiometer. The third circuit contained an LED with a photoresistor and by implementing code, as the photoresistor detected a lower brightness, the LED would turn on. Lastly, the fourth circuit involved using the same circuit as the second circuit connected to the oscilloscope and observing the pulse width modulation and how it was affected by changes in resistance caused by the potentiometer. For the conclusions reached for the lab, from the first circuit we learned that the human eye has a frequency (Over 100 Hz) in which the eye cannot see flickering in lights. This effect is called the persistence of vision and is important in the field of designing electrical structures due to the use of sensors and lights. For the second circuit, we verified the Baud Rate and learned the difference between analog and digital signals. By changing the resistance in the potentiometer, the Serial Monitor Refresh would only take measurements when the LED blinks. As you increase the resistance in the potentiometer, the LED blinks less, and therefore measurements are taken less often by Arduino IDE
 
 
