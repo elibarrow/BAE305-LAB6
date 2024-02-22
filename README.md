@@ -88,6 +88,9 @@ digitalWrite(trigPin, LOW);
 
 }
 ```
+
+Code Display 1:
+
 NOTE: This code was previously written by someone else and edited by our group during the lab. The link to the website, where the code can be found is shown below.   
 https://projecthub.arduino.cc/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-7cabe1
 
@@ -279,6 +282,8 @@ void leftMotor(int motorSpeed)                        //function for driving the
   analogWrite(PWMB, abs(motorSpeed));                 //now that the motor direction is set, drive it at the entered speed
 }
 ```
+Code Display 2:
+
 
 After assuring the code that we inserted from the internet worked, we then edited that code to be able to insert commands into the serial port to move both motors at 3 different speeds; slow, medium, and fast.     
 NOTE:  The code shown for this step will be shown a few lines below to reduce the amount of space taken up in our report, it has this step as well as the following steps included, and it is based on the code above but has been edited to perform a new task.
@@ -472,6 +477,10 @@ void leftMotor(int motorSpeed)                        //function for driving the
 }
 
 ```
+Code Display 3:
+
+
+
  After completing this part of the lab we then ensured the code ran the robot as expected and proceeded to demonstrate this to the instructor.
 
 
